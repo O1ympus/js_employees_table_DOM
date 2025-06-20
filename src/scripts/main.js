@@ -102,10 +102,10 @@ fields.forEach((field) => {
   form.appendChild(label);
 });
 
-form.children[0].setAttribute('type', 'text');
-form.children[1].setAttribute('type', 'text');
-form.children[2].setAttribute('type', 'number');
-form.children[3].setAttribute('type', 'number');
+form.children[0].querySelector('input').setAttribute('type', 'text');
+form.children[1].querySelector('input').setAttribute('type', 'text');
+form.children[2].querySelector('input').setAttribute('type', 'number');
+form.children[3].querySelector('input').setAttribute('type', 'number');
 
 const officeLabel = document.createElement('label');
 
